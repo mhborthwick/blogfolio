@@ -1,10 +1,11 @@
+import Layout from "../components/Layout";
 import "./Home.css";
 
 function Home() {
   return (
-    <div>
+    <Layout>
       <h1>Homepage</h1>
-    </div>
+    </Layout>
   );
 }
 
