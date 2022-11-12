@@ -1,11 +1,29 @@
-import { Heading } from "@chakra-ui/react";
+import { Box, Flex, Heading, Link, Text } from "@chakra-ui/react";
+import { ArrowForwardIcon } from "@chakra-ui/icons";
 import Layout from "../components/Layout";
-// import "./Home.css";
+import metaFields from "./blog/metaFields";
 
 function Home() {
   return (
     <Layout>
-      <Heading>Homepage</Heading>
+      <Flex as="main" direction="column" mt="4rem">
+        {metaFields.map((m) => {
+          return (
+            <Flex key={m.id} direction="column" mb="2rem">
+              <Heading as="h2">{m.title}</Heading>
+              <Text>{m.createdAt.toDateString()}</Text>
+              <Box>
+                {m.description}{" "}
+                <Box as="span">
+                  <Link href={m.url}>
+                    Read more <ArrowForwardIcon />
+                  </Link>
+                </Box>
+              </Box>
+            </Flex>
+          );
+        })}
+      </Flex>
     </Layout>
   );
 }
