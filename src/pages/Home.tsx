@@ -1,10 +1,11 @@
+import { Heading } from "@chakra-ui/react";
 import Layout from "../components/Layout";
-import "./Home.css";
+// import "./Home.css";
 
 function Home() {
   return (
     <Layout>
-      <h1>Homepage</h1>
+      <Heading>Homepage</Heading>
     </Layout>
   );
 }
