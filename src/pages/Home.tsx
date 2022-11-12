@@ -6,7 +6,7 @@ import metaFields from "./blog/metaFields";
 function Home() {
   return (
     <Layout>
-      <Flex as="main" direction="column" mt="4rem">
+      <Flex as="main" direction="column" mt="4rem" flex="1 1">
         {metaFields.map((m) => {
           return (
             <Flex key={m.id} direction="column" mb="2rem">
