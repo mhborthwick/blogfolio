@@ -25,6 +25,7 @@ export default defineConfig({
       input: {
         main: resolve(root, "index.html"),
         portfolio: resolve(root, "portfolio", "index.html"),
+        about: resolve(root, "about", "index.html"),
         ...blogPosts,
       },
     },
