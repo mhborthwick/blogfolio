@@ -10,7 +10,7 @@ type Props = {
 function Layout({ children }: Props) {
   return (
     <>
-      <Box maxW="1280px" m="0 auto" p="2rem" minH="100vh">
+      <Box maxW="42rem" m="0 auto" p="2rem" minH="100vh">
         <Header />
         {children}
       </Box>

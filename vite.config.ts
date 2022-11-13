@@ -15,19 +15,25 @@ const blogPosts = Object.fromEntries(
     ])
 );
 
-export default defineConfig({
-  root,
-  plugins: [react()],
-  build: {
-    outDir,
-    emptyOutDir: true,
-    rollupOptions: {
-      input: {
-        main: resolve(root, "index.html"),
-        portfolio: resolve(root, "portfolio", "index.html"),
-        about: resolve(root, "about", "index.html"),
-        ...blogPosts,
+export default defineConfig(async () => {
+  const mdx = await import("@mdx-js/rollup");
+  return {
+    root,
+    optimizeDeps: {
+      include: ["react/jsx-runtime"],
+    },
+    plugins: [mdx.default({ remarkPlugins: [] }), react()],
+    build: {
+      outDir,
+      emptyOutDir: true,
+      rollupOptions: {
+        input: {
+          main: resolve(root, "index.html"),
+          portfolio: resolve(root, "portfolio", "index.html"),
+          about: resolve(root, "about", "index.html"),
+          ...blogPosts,
+        },
       },
     },
-  },
+  };
 });
