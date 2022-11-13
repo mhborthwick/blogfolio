@@ -12,14 +12,16 @@ function Home() {
             <Flex key={m.id} direction="column" mb="2rem">
               <Heading as="h2">{m.title}</Heading>
               <Text>{m.createdAt.toDateString()}</Text>
-              <Box>
-                {m.description}{" "}
-                <Box as="span">
-                  <Link href={m.url}>
-                    Read more <ArrowForwardIcon />
-                  </Link>
-                </Box>
-              </Box>
+              <Flex className="description">
+                <Text>
+                  {m.description}{" "}
+                  <Box as="span" className="read-more">
+                    <Link href={m.url}>
+                      Read more <ArrowForwardIcon />
+                    </Link>
+                  </Box>
+                </Text>
+              </Flex>
             </Flex>
           );
         })}
