@@ -1,6 +1,6 @@
 import { Box, Link, ListItem, UnorderedList } from "@chakra-ui/react";
 
-function Nav() {
+function DesktopNav() {
   return (
     <Box as="nav" m="auto 0">
       <UnorderedList display="flex" flexDirection="row">
@@ -19,4 +19,4 @@ function Nav() {
   );
 }
 
-export default Nav;
+export default DesktopNav;
