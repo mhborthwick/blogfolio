@@ -14,7 +14,7 @@ import {
 import React, { type MutableRefObject } from 'react'
 import { RiMenuFill } from 'react-icons/ri'
 
-function MobileNav () {
+function MobileNav() {
   const { isOpen, onOpen, onClose } = useDisclosure()
   const btnRef = React.useRef() as MutableRefObject<HTMLButtonElement>
 

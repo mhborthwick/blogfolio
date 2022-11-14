@@ -7,7 +7,7 @@ interface Props {
   children?: React.ReactNode
 }
 
-function Layout ({ children }: Props) {
+function Layout({ children }: Props) {
   return (
     <>
       <Box maxW="42rem" m="0 auto" p="2rem" minH="100vh">

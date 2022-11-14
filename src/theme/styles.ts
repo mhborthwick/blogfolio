@@ -1,21 +1,21 @@
 enum LinkColor {
-  DEFAULT = 'teal.500',
+  DEFAULT = 'teal.500'
 }
 
 enum TextDecoration {
-  DEFAULT = 'underline',
+  DEFAULT = 'underline'
 }
 
 enum LineHeight {
-  DEFAULT = '1.75',
+  DEFAULT = '1.75'
 }
 
 enum MarginTop {
-  DEFAULT = '1.25em',
+  DEFAULT = '1.25em'
 }
 
 enum MarginBottom {
-  DEFAULT = '1.25em',
+  DEFAULT = '1.25em'
 }
 
 const styles = {

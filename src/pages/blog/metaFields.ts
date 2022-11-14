@@ -1,4 +1,4 @@
-function createUrl (id: number, slug: string) {
+function createUrl(id: number, slug: string) {
   return `/blog/posts/${id}/${slug}`
 }
 

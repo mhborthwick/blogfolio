@@ -9,6 +9,7 @@
     "preview": "vite preview",
     "lint": "eslint --max-warnings=0 src",
     "lint:fix": "yarn lint --fix",
+    "format": "prettier --write .",
     "prepare": "husky install"
   },
   "husky": {
@@ -17,7 +18,10 @@
     }
   },
   "lint-staged": {
-    "*.{tsx,ts}": [
+    "*.{json,md,tsx,ts}": [
+      "yarn format"
+    ],
+    "src/**/*.{tsx,ts}": [
       "yarn lint:fix"
     ]
   },
@@ -40,6 +44,7 @@
     "@typescript-eslint/eslint-plugin": "^5.0.0",
     "@vitejs/plugin-react": "^2.2.0",
     "eslint": "^8.0.1",
+    "eslint-config-prettier": "^8.5.0",
     "eslint-config-standard-with-typescript": "^23.0.0",
     "eslint-plugin-import": "^2.25.2",
     "eslint-plugin-n": "^15.0.0",
@@ -48,6 +53,7 @@
     "glob": "^8.0.3",
     "husky": "^8.0.0",
     "lint-staged": "^13.0.3",
+    "prettier": "^2.7.1",
     "typescript": "*",
     "vite": "^3.2.3"
   }

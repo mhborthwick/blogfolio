@@ -3,7 +3,7 @@ import { CiDark, CiLight } from 'react-icons/ci'
 import MobileNav from './MobileNav'
 import DesktopNav from './DesktopNav'
 
-function Header () {
+function Header() {
   const { colorMode, toggleColorMode } = useColorMode()
   return (
     <Flex as="header" justify="space-between">
@@ -19,13 +19,11 @@ function Header () {
         as={IconButton}
         aria-label="Options"
         icon={
-          colorMode === 'light'
-            ? (
+          colorMode === 'light' ? (
             <CiDark size="1.5em" />
-              )
-            : (
+          ) : (
             <CiLight size="1.5em" />
-              )
+          )
         }
         variant="unstyled"
         _hover={{

@@ -2,7 +2,7 @@ import { Flex, Heading, Text } from '@chakra-ui/react'
 import Layout from '../../../components/Layout'
 import metaFields, { type MetaField } from '../metaFields'
 
-function getMetaField (fields: MetaField[], id: number) {
+function getMetaField(fields: MetaField[], id: number) {
   const field = fields.find((f) => f.id === id)
   if (field === undefined) {
     throw new Error(`Couldn't find field with id: ${id}`)
@@ -17,7 +17,7 @@ interface Props {
   children?: React.ReactNode
 }
 
-function PostWrapper ({ id, children }: Props) {
+function PostWrapper({ id, children }: Props) {
   const field = getMetaField(metaFields, id)
   return (
     <Layout>

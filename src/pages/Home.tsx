@@ -3,7 +3,7 @@ import { ArrowForwardIcon } from '@chakra-ui/icons'
 import Layout from '../components/Layout'
 import metaFields from './blog/metaFields'
 
-function Home () {
+function Home() {
   return (
     <Layout>
       <Flex as="main" direction="column" mt="4rem" flex="1 1">
