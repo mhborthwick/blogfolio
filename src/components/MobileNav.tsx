@@ -12,7 +12,7 @@ import {
   Button
 } from '@chakra-ui/react'
 import React, { type MutableRefObject } from 'react'
-import { RiMenu3Fill } from 'react-icons/ri'
+import { RiMenuFill } from 'react-icons/ri'
 
 function MobileNav () {
   const { isOpen, onOpen, onClose } = useDisclosure()
@@ -25,11 +25,12 @@ function MobileNav () {
         onClick={onOpen}
         as={IconButton}
         aria-label="Options"
-        icon={<RiMenu3Fill size="1.5em" />}
+        icon={<RiMenuFill size="1.5em" />}
         variant="link"
       />
       <Drawer
         isOpen={isOpen}
+        placement="right"
         size="full"
         onClose={onClose}
         finalFocusRef={btnRef}
@@ -45,6 +46,15 @@ function MobileNav () {
             lineHeight="1.75"
             fontWeight="bold"
           >
+            <Link
+              href="/"
+              mt="1.25em"
+              mb="1.25em"
+              _hover={{ textDecoration: 'none' }}
+            >
+              Home
+            </Link>
+            <Divider />
             <Link
               href="/about"
               mt="1.25em"
