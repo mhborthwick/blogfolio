@@ -1,7 +1,7 @@
-import { Flex, Icon, Link, Text } from "@chakra-ui/react";
-import { AiFillGithub } from "react-icons/ai";
+import { Flex, Icon, Link, Text } from '@chakra-ui/react'
+import { AiFillGithub } from 'react-icons/ai'
 
-function Footer() {
+function Footer () {
   return (
     <Flex as="footer" p="2rem" justifyContent="center">
       <Flex direction="column">
@@ -11,7 +11,7 @@ function Footer() {
         </Link>
       </Flex>
     </Flex>
-  );
+  )
 }
 
-export default Footer;
+export default Footer

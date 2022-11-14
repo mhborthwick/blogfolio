@@ -1,9 +1,9 @@
-import { Flex, Show } from "@chakra-ui/react";
-import MobileNav from "./MobileNav";
-import DesktopNav from "./DesktopNav";
-import SiteTitle from "./SiteTitle";
+import { Flex, Show } from '@chakra-ui/react'
+import MobileNav from './MobileNav'
+import DesktopNav from './DesktopNav'
+import SiteTitle from './SiteTitle'
 
-function Header() {
+function Header () {
   return (
     <Flex as="header" justify="space-between">
       <SiteTitle />
@@ -14,7 +14,7 @@ function Header() {
         <DesktopNav />
       </Show>
     </Flex>
-  );
+  )
 }
 
-export default Header;
+export default Header

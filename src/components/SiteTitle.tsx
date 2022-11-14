@@ -1,13 +1,13 @@
-import { Heading, Link } from "@chakra-ui/react";
+import { Heading, Link } from '@chakra-ui/react'
 
-function SiteTitle() {
+function SiteTitle () {
   return (
     <Heading as="h1">
-      <Link href="/" _hover={{ textDecoration: "none" }}>
+      <Link href="/" _hover={{ textDecoration: 'none' }}>
         MB
       </Link>
     </Heading>
-  );
+  )
 }
 
-export default SiteTitle;
+export default SiteTitle

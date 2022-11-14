@@ -1,9 +1,9 @@
-import { Box, Flex, Heading, Link, Text } from "@chakra-ui/react";
-import { ArrowForwardIcon } from "@chakra-ui/icons";
-import Layout from "../components/Layout";
-import metaFields from "./blog/metaFields";
+import { Box, Flex, Heading, Link, Text } from '@chakra-ui/react'
+import { ArrowForwardIcon } from '@chakra-ui/icons'
+import Layout from '../components/Layout'
+import metaFields from './blog/metaFields'
 
-function Home() {
+function Home () {
   return (
     <Layout>
       <Flex as="main" direction="column" mt="4rem" flex="1 1">
@@ -14,7 +14,7 @@ function Home() {
               <Text>{m.createdAt.toDateString()}</Text>
               <Flex className="description">
                 <Text>
-                  {m.description}{" "}
+                  {m.description}{' '}
                   <Box as="span" className="read-more">
                     <Link href={m.url}>
                       Read more <ArrowForwardIcon />
@@ -23,11 +23,11 @@ function Home() {
                 </Text>
               </Flex>
             </Flex>
-          );
+          )
         })}
       </Flex>
     </Layout>
-  );
+  )
 }
 
-export default Home;
+export default Home

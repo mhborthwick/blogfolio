@@ -1,9 +1,9 @@
-function Portfolio() {
+function Portfolio () {
   return (
     <div>
       <h1>Portfolio</h1>
     </div>
-  );
+  )
 }
 
-export default Portfolio;
+export default Portfolio

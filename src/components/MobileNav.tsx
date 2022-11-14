@@ -9,14 +9,14 @@ import {
   IconButton,
   Link,
   useDisclosure,
-  Button,
-} from "@chakra-ui/react";
-import React, { type MutableRefObject } from "react";
-import { RiMenu3Fill } from "react-icons/ri";
+  Button
+} from '@chakra-ui/react'
+import React, { type MutableRefObject } from 'react'
+import { RiMenu3Fill } from 'react-icons/ri'
 
-function MobileNav() {
-  const { isOpen, onOpen, onClose } = useDisclosure();
-  const btnRef = React.useRef() as MutableRefObject<HTMLButtonElement>;
+function MobileNav () {
+  const { isOpen, onOpen, onClose } = useDisclosure()
+  const btnRef = React.useRef() as MutableRefObject<HTMLButtonElement>
 
   return (
     <>
@@ -49,7 +49,7 @@ function MobileNav() {
               href="/about"
               mt="1.25em"
               mb="1.25em"
-              _hover={{ textDecoration: "none" }}
+              _hover={{ textDecoration: 'none' }}
             >
               About
             </Link>
@@ -58,7 +58,7 @@ function MobileNav() {
               href="/portfolio"
               mt="1.25em"
               mb="1.25em"
-              _hover={{ textDecoration: "none" }}
+              _hover={{ textDecoration: 'none' }}
             >
               Portfolio
             </Link>
@@ -67,7 +67,7 @@ function MobileNav() {
         </DrawerContent>
       </Drawer>
     </>
-  );
+  )
 }
 
-export default MobileNav;
+export default MobileNav
