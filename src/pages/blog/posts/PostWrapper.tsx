@@ -1,7 +1,6 @@
 import { Flex, Heading, Text } from "@chakra-ui/react";
-import Layout from "../../../../components/Layout";
-import metaFields, { type MetaField } from "../../metaFields";
-import Content from "./Content.mdx";
+import Layout from "../../../components/Layout";
+import metaFields, { type MetaField } from "../metaFields";
 
 function getMetaField(fields: MetaField[], id: number) {
   const field = fields.find((f) => f.id === id);
@@ -13,19 +12,22 @@ function getMetaField(fields: MetaField[], id: number) {
 
 const MDXWrapper = (props: any) => <div className="mdx" {...props} />;
 
-function Post() {
-  const field = getMetaField(metaFields, 1);
+type Props = {
+  id: number;
+  children?: React.ReactNode;
+};
+
+function PostWrapper({ id, children }: Props) {
+  const field = getMetaField(metaFields, id);
   return (
     <Layout>
       <Flex as="main" direction="column" mt="4rem" flex="1 1">
         <Heading>{field.title}</Heading>
         <Text>{field.createdAt.toDateString()}</Text>
-        <MDXWrapper>
-          <Content />
-        </MDXWrapper>
+        <MDXWrapper>{children}</MDXWrapper>
       </Flex>
     </Layout>
   );
 }
 
-export default Post;
+export default PostWrapper;
