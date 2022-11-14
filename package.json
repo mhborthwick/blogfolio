@@ -8,7 +8,18 @@
     "build": "tsc && vite build",
     "preview": "vite preview",
     "lint": "eslint --max-warnings=0 src",
-    "lint:fix": "yarn lint --fix"
+    "lint:fix": "yarn lint --fix",
+    "prepare": "husky install"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{tsx,ts}": [
+      "yarn lint:fix"
+    ]
   },
   "dependencies": {
     "@chakra-ui/icons": "^2.0.11",
@@ -35,6 +46,8 @@
     "eslint-plugin-promise": "^6.0.0",
     "eslint-plugin-react": "^7.31.10",
     "glob": "^8.0.3",
+    "husky": "^8.0.0",
+    "lint-staged": "^13.0.3",
     "typescript": "*",
     "vite": "^3.2.3"
   }
