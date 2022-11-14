@@ -1,4 +1,3 @@
-// import "../../../blog/Blog.css";
 import { Flex, Heading, Text } from "@chakra-ui/react";
 import Layout from "../../../../components/Layout";
 import metaFields, { type MetaField } from "../../metaFields";
