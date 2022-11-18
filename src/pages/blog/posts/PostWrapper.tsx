@@ -10,7 +10,7 @@ function getMetaField(fields: MetaField[], id: number) {
   return field
 }
 
-const MDXWrapper = (props: any) => <div className="mdx" {...props} />
+const MDXWrapper = (props: any) => <div className="mdx-post" {...props} />
 
 interface Props {
   id: number

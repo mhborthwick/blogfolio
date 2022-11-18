@@ -20,7 +20,7 @@ enum MarginBottom {
 
 const styles = {
   global: {
-    '.mdx': {
+    '.mdx-post': {
       a: {
         color: LinkColor.DEFAULT,
         _hover: {
@@ -30,6 +30,18 @@ const styles = {
       p: {
         lineHeight: LineHeight.DEFAULT,
         mt: MarginTop.DEFAULT,
+        mb: MarginBottom.DEFAULT
+      }
+    },
+    '.mdx-about': {
+      a: {
+        color: LinkColor.DEFAULT,
+        _hover: {
+          textDecoration: TextDecoration.DEFAULT
+        }
+      },
+      p: {
+        lineHeight: LineHeight.DEFAULT,
         mb: MarginBottom.DEFAULT
       }
     },
