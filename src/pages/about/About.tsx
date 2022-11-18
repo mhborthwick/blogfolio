@@ -10,7 +10,7 @@ function About() {
   return (
     <Layout>
       <Box as="main" display={{ md: 'flex' }} mt="4rem">
-        <Flex justifyContent="center" flexShrink="0">
+        <Flex justifyContent="center" flexShrink="0" mb="1.5rem">
           <Image
             borderRadius="full"
             boxSize="100px"
