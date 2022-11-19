@@ -42,6 +42,7 @@ function Portfolio() {
                     <Button
                       as="a"
                       href={m.demo}
+                      target="_blank"
                       rightIcon={<ExternalLinkIcon />}
                     >
                       Demo
@@ -50,6 +51,7 @@ function Portfolio() {
                   <Button
                     as="a"
                     href={m.source}
+                    target="_blank"
                     rightIcon={<ExternalLinkIcon />}
                   >
                     Source
