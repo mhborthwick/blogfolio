@@ -13,10 +13,18 @@ import {
 } from '@chakra-ui/react'
 import { ExternalLinkIcon } from '@chakra-ui/icons'
 import metaFields from './metaFields'
+import { motion } from 'framer-motion'
+import config from '../../utils/motion/config'
 
 function Portfolio() {
   return (
-    <Box mt="2rem">
+    <Box
+      mt="2rem"
+      as={motion.div}
+      initial={config.INITIAL}
+      animate={config.ANIMATE}
+      transition={config.TRANSITION}
+    >
       <SimpleGrid columns={{ sm: 1, md: 2 }} spacing={2}>
         {metaFields.map((m) => {
           return (

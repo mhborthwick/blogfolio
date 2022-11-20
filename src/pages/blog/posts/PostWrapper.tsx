@@ -1,5 +1,7 @@
-import { Flex, Heading, Text } from '@chakra-ui/react'
+import { Box, Flex, Heading, Text } from '@chakra-ui/react'
+import { motion } from 'framer-motion'
 import { Layout } from '../../../components'
+import config from '../../../utils/motion/config'
 import metaFields, { type MetaField } from '../metaFields'
 
 function getMetaField(fields: MetaField[], id: number) {
@@ -22,9 +24,16 @@ function PostWrapper({ id, children }: Props) {
   return (
     <Layout>
       <Flex as="main" direction="column" mt="4rem" flex="1 1">
-        <Heading>{field.title}</Heading>
-        <Text>{field.createdAt.toDateString()}</Text>
-        <MDXWrapper>{children}</MDXWrapper>
+        <Box
+          as={motion.div}
+          initial={config.INITIAL}
+          animate={config.ANIMATE}
+          transition={config.TRANSITION}
+        >
+          <Heading>{field.title}</Heading>
+          <Text>{field.createdAt.toDateString()}</Text>
+          <MDXWrapper>{children}</MDXWrapper>
+        </Box>
       </Flex>
     </Layout>
   )
