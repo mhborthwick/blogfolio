@@ -1,30 +1,13 @@
-import { Box, Flex, Heading, Link, Text } from '@chakra-ui/react'
-import { ArrowForwardIcon } from '@chakra-ui/icons'
-import Layout from '../components/Layout'
-import metaFields from './blog/metaFields'
+import { Flex } from '@chakra-ui/react'
+import { About, Layout, Portfolio } from '../components'
 
 function Home() {
   return (
     <Layout>
-      <Flex as="main" direction="column" mt="4rem" flex="1 1">
-        {metaFields.map((m) => {
-          return (
-            <Flex key={m.id} direction="column" mb="2rem">
-              <Heading as="h2">{m.title}</Heading>
-              <Text>{m.createdAt.toDateString()}</Text>
-              <Flex className="description">
-                <Text>
-                  {m.description}{' '}
-                  <Box as="span" className="read-more">
-                    <Link href={m.url}>
-                      Read more <ArrowForwardIcon />
-                    </Link>
-                  </Box>
-                </Text>
-              </Flex>
-            </Flex>
-          )
-        })}
+      <Flex as="main" direction="column" mt="4rem">
+        {/* TODO: Fix mailto address */}
+        <About />
+        <Portfolio />
       </Flex>
     </Layout>
   )

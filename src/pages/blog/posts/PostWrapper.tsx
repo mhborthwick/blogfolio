@@ -1,5 +1,5 @@
 import { Flex, Heading, Text } from '@chakra-ui/react'
-import Layout from '../../../components/Layout'
+import { Layout } from '../../../components'
 import metaFields, { type MetaField } from '../metaFields'
 
 function getMetaField(fields: MetaField[], id: number) {

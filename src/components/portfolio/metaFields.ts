@@ -13,6 +13,21 @@ export interface MetaField {
 
 const metaFields: MetaField[] = [
   {
+    id: 2,
+    title: 'Songbook',
+    description: 'Share your favorite song for a future visitor.',
+    technologies: [
+      'JavaScript / TypeScript',
+      'Next.js',
+      'React',
+      'Express',
+      'Postgres',
+      'Prisma'
+    ],
+    demo: null,
+    source: createUrl('songbook')
+  },
+  {
     id: 1,
     title: 'My Blogfolio',
     description: 'The source of this website.',
