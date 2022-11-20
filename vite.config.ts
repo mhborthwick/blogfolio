@@ -29,8 +29,7 @@ export default defineConfig(async () => {
       rollupOptions: {
         input: {
           main: resolve(root, 'index.html'),
-          portfolio: resolve(root, 'portfolio', 'index.html'),
-          about: resolve(root, 'about', 'index.html'),
+          blog: resolve(root, 'blog', 'index.html'),
           ...blogPosts
         }
       }

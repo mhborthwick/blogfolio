@@ -1,6 +1,6 @@
 import { Button, Flex, IconButton, Show, useColorMode } from '@chakra-ui/react'
 import { CiDark, CiLight } from 'react-icons/ci'
-import { MobileNav, DesktopNav } from './nav'
+import { MobileNav, DesktopNav } from '.'
 
 function Header() {
   const { colorMode, toggleColorMode } = useColorMode()

@@ -1,8 +1,7 @@
 import { Box } from '@chakra-ui/react'
 import { SkipNavLink, SkipNavContent } from '@chakra-ui/skip-nav'
 import React from 'react'
-import Footer from './Footer'
-import Header from './Header'
+import { Footer, Header } from '.'
 
 interface Props {
   children?: React.ReactNode

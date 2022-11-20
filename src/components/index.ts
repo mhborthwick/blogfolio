@@ -1,0 +1,7 @@
+export { default as About } from './about/About'
+export { default as DesktopNav } from './nav/DesktopNav'
+export { default as MobileNav } from './nav/MobileNav'
+export { default as Portfolio } from './portfolio/Portfolio'
+export { default as Footer } from './Footer'
+export { default as Header } from './Header'
+export { default as Layout } from './Layout'

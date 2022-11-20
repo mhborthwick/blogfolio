@@ -1,4 +1,5 @@
 import {
+  Button,
   Divider,
   Drawer,
   DrawerBody,
@@ -8,8 +9,7 @@ import {
   DrawerCloseButton,
   IconButton,
   Link,
-  useDisclosure,
-  Button
+  useDisclosure
 } from '@chakra-ui/react'
 import React, { type MutableRefObject } from 'react'
 import { RiMenuFill } from 'react-icons/ri'
@@ -56,21 +56,31 @@ function MobileNav() {
             </Link>
             <Divider />
             <Link
-              href="/about"
+              href="/blog"
               mt="1.25em"
               mb="1.25em"
               _hover={{ textDecoration: 'none' }}
             >
-              About
+              Blog
             </Link>
             <Divider />
             <Link
-              href="/portfolio"
+              href="#"
               mt="1.25em"
               mb="1.25em"
               _hover={{ textDecoration: 'none' }}
             >
-              Portfolio
+              Resume
+            </Link>
+            <Divider />
+            {/* TODO: Fix mailto Link */}
+            <Link
+              href="mailto:email@example.com"
+              mt="1.25em"
+              mb="1.25em"
+              _hover={{ textDecoration: 'none' }}
+            >
+              Contact
             </Link>
             <Divider />
           </DrawerBody>

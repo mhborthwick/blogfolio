@@ -10,13 +10,19 @@ function DesktopNav() {
           </Link>
         </ListItem>
         <ListItem listStyleType="none">
-          <Link href="/about" mr="1rem">
-            About
+          <Link href="/blog" mr="1rem">
+            Blog
           </Link>
         </ListItem>
         <ListItem listStyleType="none">
-          <Link href="/portfolio" mr="1rem">
-            Portfolio
+          <Link href="#" mr="1rem">
+            Resume
+          </Link>
+        </ListItem>
+        <ListItem listStyleType="none">
+          {/* TODO: Fix mailto address */}
+          <Link href="mailto:email@example.com" mr="1rem">
+            Contact
           </Link>
         </ListItem>
       </UnorderedList>

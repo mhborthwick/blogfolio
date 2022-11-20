@@ -1,26 +1,26 @@
 import {
   Badge,
+  Box,
   Button,
   ButtonGroup,
   Card,
   CardHeader,
   CardBody,
   CardFooter,
-  Flex,
   Heading,
-  Text
+  Text,
+  SimpleGrid
 } from '@chakra-ui/react'
 import { ExternalLinkIcon } from '@chakra-ui/icons'
-import Layout from '../../components/Layout'
 import metaFields from './metaFields'
 
 function Portfolio() {
   return (
-    <Layout>
-      <Flex as="main" direction="column" mt="4rem" flex="1 1">
+    <Box mt="2rem">
+      <SimpleGrid columns={{ sm: 1, md: 2 }} spacing={2}>
         {metaFields.map((m) => {
           return (
-            <Card key={m.id} mb="2rem">
+            <Card key={m.id}>
               <CardHeader>
                 <Heading as="h2" lineHeight="1.5">
                   {m.title}
@@ -61,8 +61,8 @@ function Portfolio() {
             </Card>
           )
         })}
-      </Flex>
-    </Layout>
+      </SimpleGrid>
+    </Box>
   )
 }
 
