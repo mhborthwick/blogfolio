@@ -31,6 +31,7 @@
     "@chakra-ui/skip-nav": "^2.0.12",
     "@emotion/react": "^11",
     "@emotion/styled": "^11",
+    "@fontsource/inter": "^4.5.14",
     "@mdx-js/rollup": "^2.1.5",
     "framer-motion": "^6",
     "react": "^18.2.0",

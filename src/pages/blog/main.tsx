@@ -1,3 +1,5 @@
+import '@fontsource/inter/400.css'
+
 import React from 'react'
 import { ChakraProvider, ColorModeScript } from '@chakra-ui/react'
 import theme from '../../theme'
