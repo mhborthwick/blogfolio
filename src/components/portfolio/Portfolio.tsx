@@ -25,7 +25,11 @@ function Portfolio() {
       animate={config.ANIMATE}
       transition={config.TRANSITION}
     >
-      <SimpleGrid columns={{ sm: 1, md: 2 }} spacing={2}>
+      <SimpleGrid
+        columns={{ sm: 1, md: 2 }}
+        spacing={2}
+        data-test-id="portfolio-section"
+      >
         {metaFields.map((m) => {
           return (
             <Card key={m.id}>

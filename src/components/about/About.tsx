@@ -8,7 +8,10 @@ const MDXWrapper = (props: any) => <div className="mdx-about" {...props} />
 
 function About() {
   return (
-    <Stack direction={{ sm: 'column-reverse', md: 'row' }}>
+    <Stack
+      direction={{ sm: 'column-reverse', md: 'row' }}
+      data-test-id="about-section"
+    >
       <Box
         mr={{ sm: 0, md: 10 }}
         as={motion.div}

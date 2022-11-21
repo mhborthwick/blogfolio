@@ -23,7 +23,13 @@ function PostWrapper({ id, children }: Props) {
   const field = getMetaField(metaFields, id)
   return (
     <Layout>
-      <Flex as="main" direction="column" mt="4rem" flex="1 1">
+      <Flex
+        as="main"
+        direction="column"
+        mt="4rem"
+        flex="1 1"
+        data-test-id="post-section"
+      >
         <Box
           as={motion.div}
           initial={config.INITIAL}

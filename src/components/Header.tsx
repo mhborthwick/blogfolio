@@ -28,6 +28,7 @@ function Header() {
         transition={config.TRANSITION}
       >
         <Button
+          data-test-id="color-mode-toggle"
           onClick={toggleColorMode}
           display="flex"
           as={IconButton}
