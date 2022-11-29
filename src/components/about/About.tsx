@@ -1,5 +1,5 @@
 import { Box, Flex, Heading, Image, Stack } from '@chakra-ui/react'
-import image from './vite.svg'
+import image from './mike-photo-1.png'
 import Content from './Content.mdx'
 import { motion } from 'framer-motion'
 import config from '../../utils/motion/config'
@@ -35,7 +35,7 @@ function About() {
       >
         <Image
           borderRadius="full"
-          boxSize="100px"
+          boxSize="130px"
           src={image}
           alt="Mike Borthwick"
         />
