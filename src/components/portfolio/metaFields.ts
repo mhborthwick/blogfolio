@@ -21,8 +21,8 @@ const metaFields: MetaField[] = [
       'Next.js',
       'React',
       'Express',
-      'Postgres',
-      'Prisma'
+      'Zod',
+      'MongoDB'
     ],
     demo: null,
     source: createUrl('songbook')
