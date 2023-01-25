@@ -24,7 +24,7 @@ const metaFields: MetaField[] = [
       'Zod',
       'MongoDB'
     ],
-    demo: null,
+    demo: 'https://songbook.up.railway.app',
     source: createUrl('songbook')
   },
   {
