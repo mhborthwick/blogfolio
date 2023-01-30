@@ -10,13 +10,15 @@ interface Props {
 function Layout({ children }: Props) {
   return (
     <>
-      <Box maxW="42rem" m="0 auto" p="1rem" minH="100vh">
+      <Box maxW="50rem" m="0 auto" p="1rem" minH="100vh">
         <SkipNavLink zIndex="999" id="content">
           Skip to content
         </SkipNavLink>
         <Header />
         <SkipNavContent id="content" />
-        {children}
+        <Box m="0 auto" p="2rem">
+          {children}
+        </Box>
       </Box>
       <Footer />
     </>

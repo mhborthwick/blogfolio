@@ -27,6 +27,7 @@ function MobileNav() {
         aria-label="Options"
         icon={<RiMenuFill size="1.5em" />}
         variant="link"
+        style={{ minHeight: '2rem' }}
       />
       <Drawer
         isOpen={isOpen}

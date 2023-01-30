@@ -19,7 +19,7 @@ function About() {
         animate={config.ANIMATE}
         transition={config.TRANSITION}
       >
-        <Heading lineHeight="1.75">Mike Borthwick</Heading>
+        <Heading lineHeight="1.75">Software Engineer</Heading>
         <MDXWrapper>
           <Content />
         </MDXWrapper>
