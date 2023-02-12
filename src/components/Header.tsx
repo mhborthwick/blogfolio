@@ -16,8 +16,8 @@ function Header() {
   const { colorMode, toggleColorMode } = useColorMode()
   return (
     <Flex as="header" justify="space-between">
-      <Heading as={'h1'} style={{ fontSize: 16, alignSelf: 'center' }}>
-        Mike Borthwick
+      <Heading as="h1" style={{ fontSize: '1rem', alignSelf: 'center' }}>
+        MIKE BORTHWICK
       </Heading>
       <Flex>
         <Show below="md">
