@@ -10,18 +10,13 @@ interface Props {
 function Layout({ children }: Props) {
   return (
     <>
-      <Box maxW="133.8rem" m="0 auto" p="2rem" minH="100vh">
+      <Box maxW="42rem" m="0 auto" p="2rem" minH="100vh">
         <SkipNavLink zIndex="999" id="content">
           Skip to content
         </SkipNavLink>
         <Header />
         <SkipNavContent id="content" />
-        <Box
-          m="0 auto"
-          p={['0rem', '0rem', '4rem']}
-          display="flex"
-          justifyContent={'center'}
-        >
+        <Box m="0 auto" display="flex" justifyContent={'center'}>
           {children}
         </Box>
       </Box>
