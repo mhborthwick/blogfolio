@@ -13,8 +13,8 @@ export interface MetaField {
 
 const metaFields: MetaField[] = [
   {
-    id: 2,
-    title: 'Songbook',
+    id: 4,
+    title: 'SongBook',
     description: 'Share your favorite song for a future visitor.',
     technologies: [
       'JavaScript / TypeScript',
@@ -26,6 +26,28 @@ const metaFields: MetaField[] = [
     ],
     demo: 'https://songbook.up.railway.app',
     source: createUrl('songbook')
+  },
+  {
+    id: 3,
+    title: 'AWA Monitoring',
+    description: "A platform monitoring service for my partner's online store.",
+    technologies: ['Golang', 'InfluxDB', 'Grafana', 'Amazon Web Services'],
+    demo: null,
+    source: createUrl('awa-monitoring')
+  },
+  {
+    id: 2,
+    title: 'Connect 4',
+    description: 'A simple Connect 4 implementation in TypeScript.',
+    technologies: [
+      'JavaScript / TypeScript',
+      'Express',
+      'Webpack',
+      'Jest',
+      'Cypress'
+    ],
+    demo: 'https://mhborthwick.github.io/connect4/',
+    source: createUrl('connect4')
   },
   {
     id: 1,
