@@ -28,8 +28,10 @@ function DesktopNav() {
             </Link>
           </ListItem>
           <ListItem listStyleType="none">
-            {/* TODO: Fix mailto address */}
-            <Link href="mailto:email@example.com" mr="1rem">
+            <Link
+              href="mailto:mhborthwick%20*at*%20gmail%20-dot-%20com"
+              mr="1rem"
+            >
               Contact
             </Link>
           </ListItem>

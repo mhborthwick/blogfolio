@@ -74,9 +74,8 @@ function MobileNav() {
               Resume
             </Link>
             <Divider />
-            {/* TODO: Fix mailto Link */}
             <Link
-              href="mailto:email@example.com"
+              href="mailto:mhborthwick%20*at*%20gmail%20-dot-%20com"
               mt="1.25em"
               mb="1.25em"
               _hover={{ textDecoration: 'none' }}

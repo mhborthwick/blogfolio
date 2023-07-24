@@ -5,7 +5,6 @@ function Home() {
   return (
     <Layout>
       <Flex as="main" direction="column" mt="4rem">
-        {/* TODO: Fix mailto address */}
         <About />
         <Portfolio />
       </Flex>
