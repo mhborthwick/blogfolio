@@ -66,12 +66,13 @@ function MobileNav() {
             </Link>
             <Divider />
             <Link
-              href="#"
+              href="https://github.com/mhborthwick"
+              target="_blank"
               mt="1.25em"
               mb="1.25em"
               _hover={{ textDecoration: 'none' }}
             >
-              Resume
+              GitHub
             </Link>
             <Divider />
             <Link

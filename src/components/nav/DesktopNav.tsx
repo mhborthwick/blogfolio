@@ -23,8 +23,12 @@ function DesktopNav() {
             </Link>
           </ListItem>
           <ListItem listStyleType="none">
-            <Link href="#" mr="1rem">
-              Resume
+            <Link
+              href="https://github.com/mhborthwick"
+              mr="1rem"
+              target="_blank"
+            >
+              GitHub
             </Link>
           </ListItem>
           <ListItem listStyleType="none">
