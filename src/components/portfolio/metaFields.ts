@@ -14,7 +14,7 @@ export interface MetaField {
 const metaFields: MetaField[] = [
   {
     id: 5,
-    title: 'SongBook',
+    title: '🎸 SongBook',
     description: 'Share your favorite song for a future visitor.',
     technologies: [
       'JavaScript / TypeScript',
@@ -29,7 +29,7 @@ const metaFields: MetaField[] = [
   },
   {
     id: 4,
-    title: 'AWA Monitoring',
+    title: '🔍 AWA Monitoring',
     description:
       "A platform monitoring service for me and my partner's online store.",
     technologies: ['Golang', 'InfluxDB', 'Grafana', 'Amazon Web Services'],
@@ -38,7 +38,7 @@ const metaFields: MetaField[] = [
   },
   {
     id: 3,
-    title: 'lorem-intl',
+    title: '💬 lorem-intl',
     description:
       'NPM package to generate Lorem Ipsum and placeholder text in multiple languages.',
     technologies: ['JavaScript / TypeScript', 'NPM', 'Jest', 'GitHub Actions'],
@@ -47,7 +47,7 @@ const metaFields: MetaField[] = [
   },
   {
     id: 2,
-    title: 'Connect 4',
+    title: '4️⃣ Connect 4',
     description: 'A simple Connect 4 implementation in TypeScript.',
     technologies: [
       'JavaScript / TypeScript',
@@ -61,7 +61,7 @@ const metaFields: MetaField[] = [
   },
   {
     id: 1,
-    title: 'My Blogfolio',
+    title: '✨ My Blogfolio',
     description: 'The source of this website.',
     technologies: ['JavaScript / TypeScript', 'React', 'Chakra-UI', 'Vite'],
     demo: null,
