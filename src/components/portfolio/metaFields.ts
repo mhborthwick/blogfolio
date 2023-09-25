@@ -31,7 +31,7 @@ const metaFields: MetaField[] = [
     id: 4,
     title: '🔍 AWA Monitoring',
     description:
-      "A platform monitoring service for me and my partner's online store.",
+      'A platform monitoring service for the As We Are online store.',
     technologies: ['Golang', 'InfluxDB', 'Grafana', 'Amazon Web Services'],
     demo: null,
     source: createUrl('awa-monitoring')
