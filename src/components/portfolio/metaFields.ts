@@ -13,7 +13,7 @@ export interface MetaField {
 
 const metaFields: MetaField[] = [
   {
-    id: 4,
+    id: 5,
     title: 'SongBook',
     description: 'Share your favorite song for a future visitor.',
     technologies: [
@@ -28,13 +28,22 @@ const metaFields: MetaField[] = [
     source: createUrl('songbook')
   },
   {
-    id: 3,
+    id: 4,
     title: 'AWA Monitoring',
     description:
       "A platform monitoring service for me and my partner's online store.",
     technologies: ['Golang', 'InfluxDB', 'Grafana', 'Amazon Web Services'],
     demo: null,
     source: createUrl('awa-monitoring')
+  },
+  {
+    id: 3,
+    title: 'lorem-intl',
+    description:
+      'NPM package to generate Lorem Ipsum and placeholder text in multiple languages.',
+    technologies: ['JavaScript / TypeScript', 'NPM', 'Jest', 'GitHub Actions'],
+    demo: null,
+    source: createUrl('lorem-intl')
   },
   {
     id: 2,
